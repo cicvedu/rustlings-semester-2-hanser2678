@@ -16,7 +16,7 @@
 
 // Put your function here!
 fn calculate_price_of_apples(number:u32) -> u32{
-    let mut price = if number < 40 {2} else {1};
+    let mut price = if number < 41 {2} else {1};
     price * number
 }
 
