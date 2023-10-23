@@ -14,7 +14,7 @@ pub fn foo_if_fizz(fizzish: &str) -> &str {
     } else if fizzish == "literally anything" {
         "baz"
     } else {
-        1
+        "sixsixsix"
     }
 }
 
