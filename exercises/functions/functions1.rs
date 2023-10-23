@@ -8,3 +8,6 @@
 fn main() {
     call_me();
 }
+fn call_me() {
+    println!("hanser世界第一可爱！")
+}
