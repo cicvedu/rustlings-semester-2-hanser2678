@@ -39,8 +39,8 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Insert new fruits if they are not already present in the
         // basket. Note that you are not allowed to put any type of fruit that's
         // already present!
-        let count = basket.entry(fruit).or_insert(0);
-        *count += 1;
+        let count = basket.entry(fruit).or_insert(1);
+        // *count += 1;
     }
 }
 
@@ -62,9 +62,9 @@ mod tests {
     fn test_given_fruits_are_not_modified() {
         let mut basket = get_fruit_basket();
         fruit_basket(&mut basket);
-        assert_eq!(*basket.get(&Fruit::Apple).unwrap(), 5);
-        assert_eq!(*basket.get(&Fruit::Mango).unwrap(), 3);
-        assert_eq!(*basket.get(&Fruit::Lychee).unwrap(), 6);
+        assert_eq!(*basket.get(&Fruit::Apple).unwrap(), 4);
+        assert_eq!(*basket.get(&Fruit::Mango).unwrap(), 2);
+        assert_eq!(*basket.get(&Fruit::Lychee).unwrap(), 5);
     }
 
     #[test]
