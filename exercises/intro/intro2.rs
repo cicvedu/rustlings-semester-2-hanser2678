@@ -7,4 +7,10 @@
 
 fn main() {
     println!("Hello {}!", "World".to_string());
+    // fn main() {
+    //     println!("Hello {}!","greeting");
+    // }
+}
+fn main() {
+    println!("Hello world");
 }
